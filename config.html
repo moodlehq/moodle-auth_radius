@@ -4,7 +4,7 @@
 if (!extension_loaded('radius')) {
     print '<div class="box errorbox errorboxcontent"><p class="errormessage"><strong>Warning: The PHP RADIUS extension is not present. Please ensure it is installed and enabled.</strong></p></div>';
 }
-include_once 'Auth/RADIUS.php';
+include_once 'lib/Auth/RADIUS.php';
 if (!class_exists('Auth_RADIUS')) {
     print '<div class="box errorbox errorboxcontent"><p class="errormessage"><strong>Warning: There is a problem with the PHP Pear Auth_RADIUS package. Please ensure it is installed correctly.</strong></p></div>';
 }
