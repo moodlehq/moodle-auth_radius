@@ -62,8 +62,8 @@ class auth_plugin_radius extends auth_plugin_base {
      * @return bool Authentication success or failure.
      */
     function user_login ($username, $password) {
-        require_once 'Auth/RADIUS.php';
-        require_once 'Crypt/CHAP.php';
+        require_once 'lib/Auth/RADIUS.php';
+        require_once 'lib/Crypt/CHAP.php';
 
         // Added by Clive on 7th May for test purposes
         // printf("Username: $username <br/>");
